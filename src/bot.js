@@ -68,7 +68,7 @@ bot.on('text', ctx => {
             if (result) {
                 ctx.reply(`<b>$ </b> <code>${command}</code>\n\n<code>${result}</code>`, { parse_mode: 'HTML' })
             } else {
-                ctx.reply('<code>Yes</code>', { parse_mode: 'HTML' })
+                ctx.reply(`<b>$ </b> <code>${command}</code>\n\n<code>Yes</code>`, { parse_mode: 'HTML' })
             }
         } catch (err) {
             console.log(err)
